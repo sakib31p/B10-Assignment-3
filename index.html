@@ -29,24 +29,81 @@
                         // body_neutral: 'rgb(51, 51, 51)',
                     },
                     fontFamily: {
-                        Manrope: 'Manrope', 
+                        Manrope:  "Manrope",  
                     },
-                    // backgroundImage: {
-                    //     leaf1: "url('./images/leaf01.png')",
-                    //     call_to_action: "url('./images/call.jpg')",
-                    //     testimonials: "url('./images/testimonials.jpg')",
-                    // },
+                    backgroundImage: {
+                        leaf1: "url('./images/leaf01.png')",
+                        call_to_action: "url('./images/call.jpg')",
+                        testimonials: "url('./images/testimonials.jpg')",
+                    },
                 },
             },
         }
     </script>
 </head>
 
-<body>
-    <header>
-        <nav>
+<body class="font-Manrope">
+    <header class="bg-[#FFFFFF00]">
+        <!-- navbar start  -->
+        <nav class="navbar w-11/12 mx-auto">
+            <div class="navbar-start">
+                <a href="#">
+                    <h2 class="font-bold text-[32px]"><i class="bg-[#ABEF5F] text-2xl rounded-[32px] -rotate-45 h-[32px] text-center w-[32px] fa-solid fa-arrow-right"></i> Rinterio</h2>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 flex items-center gap-2 text-[16px] font-medium">
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a class="font-bold" href="#">Home</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a class="text-[#737373]" href="#">Services</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a class="text-[#737373]" href="#">Portfolio</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a class="text-[#737373]" href="#">Blogs</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a class="text-[#737373]" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-5 items-center">
+                <div class="flex gap-5 text-lg">
+                    <button class="lg:flex md:flex hidden items-center md:gap-7 lg:gap-5 font-semibold">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button class="bg-[#ABEF5F] hidden md:flex lg:flex font-bold px-5 rounded-[32px] py-1 gap-2">Book Consult <i class="bg-black text-white p-1 rounded-full -rotate-45 fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-white p-2 text-lg">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Blogs</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
          
-
+          
         </nav>
 
     </header>
